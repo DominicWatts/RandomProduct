@@ -64,7 +64,6 @@ class Layer extends \Magento\Catalog\Model\Layer
         } else {
             $collection = $this->productCollectionFactory->create();
             $this->prepareProductCollection($collection);
-            $collection->getSelect()->order('rand()');
             $this->_productCollections['xigen_custom'] = $collection;
         }
         return $collection;

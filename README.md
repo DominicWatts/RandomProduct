@@ -1,6 +1,6 @@
 # Magento 2 Random Products Offers Page #
 
-Frontend controller to display random products plus any additional rules that would apply to a product collection on your store such as visibility or stock.
+Frontend controller to display all products with with layered navigation. Plus widget which pulls through random product(s) from whole of catalog. Any additional rules that would apply to a product collection on your store such as visibility or stock.
 
 # Install instructions #
 
@@ -12,8 +12,8 @@ Frontend controller to display random products plus any additional rules that wo
 
 # Usage instructions #
 
-Go to `/random-offers` or use header link
+Go to `/all-products` or use header link
 
 ## Widget
 
-There is a widget for use in layout, blocks and CMS pages
+There is a widget for use in layout, blocks and CMS pages which is configurable via backend.

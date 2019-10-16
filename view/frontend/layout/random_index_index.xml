@@ -12,16 +12,16 @@
                 </argument>
             </action>
             <action method="addCrumb">
-                <argument name="crumbName" xsi:type="string">Random Offers</argument>
+                <argument name="crumbName" xsi:type="string">All Products</argument>
                 <argument name="crumbInfo" xsi:type="array">
-                    <item name="title" xsi:type="string">Random Offers</item>
-                    <item name="label" xsi:type="string">Random Offers</item>
+                    <item name="title" xsi:type="string">All Products</item>
+                    <item name="label" xsi:type="string">All Products</item>
                 </argument>
             </action>
         </referenceBlock>
         <referenceBlock name="page.main.title">
             <action method="setPageTitle">
-                <argument translate="true" name="title" xsi:type="string">Random Offers</argument>
+                <argument translate="true" name="title" xsi:type="string">All Products</argument>
             </action>
         </referenceBlock>
         <referenceContainer name="content">
