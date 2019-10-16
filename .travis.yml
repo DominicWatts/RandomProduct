@@ -23,4 +23,7 @@ before_install:
 script:
 - find -L . -path ./vendor -prune -o -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
 - if [[ "$SNIFF" == "1" ]]; then php vendor/bin/phpcs --standard=Magento2 --ignore=*/etc/*,*/vendor/* ./; fi
-
+env:
+  global:
+  - secure: CnwRkb7CEBe8Mst032rndnCVP7jl5nfegYTVFc9IUWOY31pq3onxrCTiWmLjgBq9D0NmE/BsgK7s5w3cAYMTQAPBh/htg45l22ZZk6n5IYZzJQdDHLqU2edeUqyXhPgwYRbpgOUHYkn2d0HhDDRn44zmzw10NL2bilcMPLh0ytwm+UaS2pPgWdU1+B7maFA/eUinxPD2hvLZd2folSDb7U06qlwJDrmsEKurZ4ipwaVTNF5J6TOMjM5NJh0zFFQnve/YwYbanCHzksdwS9Qh5wzpyXmRjrRFZDzwuGAzNyakIGXlbOzh8s04pGSNZYVSQasoiLaJvjSUf7F50wNybclkoXzpCqOZHSOP/miCrCYZtYlYq8VJkGOG4ijBxz76u99BUEkbdmvevi3wNcs4rYgt4pSt22IzPDuEzesfvyvv6PpmPTpBwoF4i5P30YONH1McpO/VTnn+5uj0RSwp+ONG8ZvTmbwJaAKeet3R61UwzBXMpOqezWc8uVmBnATvIxBAc9F+1syV4Q9vW6VEvH1R7fpsrOC5juQvLg7nqppp9KwBo7mdK9Enbj6A3z9mUtrO2dHgITU+LOF/Bl790MRWPRi0EYFXLTfNuALTdRv24nqXAH4WumgiOrdW1VnXt/V31oDcZiEfbJHcQyy6+rmNzEoqw0IQUqVxsOQpYLg=
+  - secure: ZeWeKU3xbU7M1SG1NE0Mh0liJD06jzPGvuCrq3fUAxPUZEk5nN5zB/D7GRJYVFp9N4bafC7Qys4enn9Gsz3l5is3SeUVcxPUu5sXbLTEfT/h/we+ov2Qg0ziTOqmkDCsvVK/HWyKy9HTyqY2SXLZx3OPp1O4Sj+tK7Sw/340hOkE/uTgadIjNTPQd5IL8SQNscO7YS/YN1gAE1I2UnARGdCiYxZ7kkJzA3w+tG29iG1Bz/L+SNF1lAf6/RqXkuldxfyu3A/V8pii/TEm1gcHY7Dq+JURPDAu6RZfmFqEt8b0HWTM/ebnXWxXTGHcx2LsT7c6GJOVusEiof+mtkz2W2gXW1khfo12hNLJSkDkoKeV1Rxk1e1wnBYr4DJpVXZ0JpkbKPyPRKRZaqVVd1XmvOvekKGAdNiKhYdn3t0Mn5j4FXlUdoxNL4xrB+F7k0/rnEq8mkdT6TEnMNw2lEO1FM/Z9IgJu6tW7Q3O3YN9JLFrYpT7iTPY623pNxgAxAjdqNc2P1h8GxC+NPr0+HGcnFB5ruRJWlwzUrcL9aJvgc20hwig8KFwMaYrdRIIqOpQvkJJOEtnvqOnA3yEyl4J4XpEcD2Ek4+UIKH+G63ItiIJUkuyAD9XJluVwc444m4MAR7SXZbP0JziaUkRLbFs6RlKmHR1iQeOCMUeIgE8ab8=
