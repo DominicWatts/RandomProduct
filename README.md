@@ -4,7 +4,7 @@ Frontend controller to display all products with with layered navigation. Plus w
 
 # Install instructions #
 
-`composer require dominicwatts/random`
+`composer require dominicwatts/randomproduct`
 
 `php bin/magento setup:upgrade`
 
