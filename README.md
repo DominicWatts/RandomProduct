@@ -4,8 +4,6 @@ Frontend controller to display all products with with layered navigation. Plus w
 
 For products to display they must be on random offer and with the random from and to date range.  Plus any additional rules that would apply to a product collection on your store such as visibility or stock.
 
-![Screenshot](https://i.snag.gy/3GZ6wr.jpg)
-
 # Install instructions #
 
 `composer require dominicwatts/random`
