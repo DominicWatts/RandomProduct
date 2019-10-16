@@ -1,14 +1,10 @@
 # Magento 2 Random Products Offers Page #
 
-Frontend controller to display products with random offers with layered navigation.
-
-For products to display they must be on random offer and with the random from and to date range.  Plus any additional rules that would apply to a product collection on your store such as visibility or stock.
-
-![Screenshot](https://i.snag.gy/3GZ6wr.jpg)
+Frontend controller to display random products plus any additional rules that would apply to a product collection on your store such as visibility or stock.
 
 # Install instructions #
 
-`composer require dominicwatts/random`
+`composer require dominicwatts/randomproduct`
 
 `php bin/magento setup:upgrade`
 
