@@ -68,24 +68,23 @@ class RandomProduct extends \Magento\Catalog\Block\Product\NewProduct implements
      */
     protected function _getProductCollection()
     {
-        return $this->_getSpeciaProductsCollection();
+        return $this->_getRandomProductsCollection();
     }
 
     /**
      * Prepare collection for recent product list
      * @return \Magento\Catalog\Model\ResourceModel\Product\Collection|Object|\Magento\Framework\Data\Collection
      */
-    protected function _getSpeciaProductsCollection()
+    protected function _getRandomProductsCollection()
     {
         /** @var $collection \Magento\Catalog\Model\ResourceModel\Product\Collection */
         $collection = $this->_productCollectionFactory->create();
         $collection->setVisibility($this->_catalogProductVisibility->getVisibleInCatalogIds());
-
+        $collection->getSelect()->orderRand();
         $date = new \Zend_Date();
 
         $collection = $this->_addProductAttributesAndPrices($collection)
             ->addStoreFilter()
-            ->getSelect()->order('rand()')
             ->setPageSize($this->getPageSize())
             ->setCurPage($this->getCurrentPage());
 
