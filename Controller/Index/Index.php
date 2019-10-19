@@ -28,7 +28,7 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         $resultPage = $this->pageFactory->create();
-        $resultPage->getConfig()->getTitle()->set('Random Offers');
+        $resultPage->getConfig()->getTitle()->set('All Products');
         return $resultPage;
     }
 }
