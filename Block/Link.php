@@ -4,7 +4,6 @@ namespace Xigen\RandomProduct\Block;
 
 /**
  * Class Link
- * @package Xigen\Testimonial\Block
  */
 class Link extends \Magento\Framework\View\Element\Html\Link
 {
